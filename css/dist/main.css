@@ -1,0 +1,10 @@
+body {
+  font-family: "Alata", sans-serif !important;
+}
+body header {
+  height: 100vh;
+  padding: 1rem 2rem;
+}
+body header .container h2 {
+  color: rgba(0, 0, 0, 0.7);
+}

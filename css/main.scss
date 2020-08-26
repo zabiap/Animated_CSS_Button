@@ -1,13 +1,120 @@
-body{
-    font-family: 'Alata', sans-serif!important;
+body {
+    font-family: 'Alata', sans-serif !important;
 
-    header{
-        height: 100vh; 
-        padding: 1rem 2rem;
-        
-        .container{
-            h2{
-                color: rgba(0,0,0,0.7);
+    .container {
+        max-width: 900px;
+        margin: auto auto;
+    }
+
+    header {
+        height: 100vh;
+
+
+        .container {
+            padding-top: 150px;
+
+            h2 {
+                color: rgba(0, 0, 0, 0.7);
+            }
+
+            .buttons {
+                display: flex;
+                width: 100%;
+                padding-top: 10px;
+
+                button {
+                    font-family: 'Alata', sans-serif;
+                    background-color: transparent;
+                    outline: none;
+                    border: 1px solid black;
+                    display: flex;
+                    align-items: center;
+                    padding: 0.6rem 1.5rem;
+                    margin-right: 30px;
+
+                    &:nth-child(1) {
+                        background: linear-gradient(to right, #7B1FA2 50%, transparent 50%);
+                        background-size: 210% 100%;
+                        background-position: right bottom;
+                        transition: background-position .4s ease-out;
+
+                        &:hover {
+                            background-position: left bottom;
+                            color: white;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background: linear-gradient(to left, #7B1FA2 50%, transparent 50%);
+                        background-size: 210% 100%;
+                        background-position: left bottom;
+                        transition: background-position .4s ease-out;
+
+                        &:hover {
+                            background-position: right bottom;
+                            color: white;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        background: linear-gradient(to bottom, #7B1FA2 50%, transparent 50%);
+                        background-size: 100% 210%;
+                        background-position: right bottom;
+                        transition: background-position .4s ease-out;
+
+                        &:hover {
+                            background-position: right top;
+                            color: white;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        background: linear-gradient(to top, #7B1FA2 50%, transparent 50%);
+                        background-size: 100% 210%;
+                        background-position: right top;
+                        transition: background-position .4s ease-out;
+
+                        &:hover {
+                            background-position: right bottom;
+                            color: white;
+                        }
+                    }
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        position: fixed;
+        width: 100vw;
+        bottom: 0;
+        left: 0;
+        height: 70px;
+        background-color: #7B1FA2;
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 100%;            
+            color: rgba($color: #FFF, $alpha: 0.7);
+
+            p{
+                width: 100%;
+                
+                span{
+                    text-align: right;
+                    
+                    a{
+                        color: rgba($color: #FFF, $alpha: 0.7);
+                        &:hover{
+                            color: rgba($color: #FFF, $alpha: 1);
+                        }
+                    }
+                }
             }
         }
     }

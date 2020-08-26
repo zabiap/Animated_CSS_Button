@@ -1,10 +1,100 @@
 body {
   font-family: "Alata", sans-serif !important;
 }
+body .container {
+  max-width: 900px;
+  margin: auto auto;
+}
 body header {
   height: 100vh;
-  padding: 1rem 2rem;
+}
+body header .container {
+  padding-top: 150px;
 }
 body header .container h2 {
   color: rgba(0, 0, 0, 0.7);
+}
+body header .container .buttons {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+}
+body header .container .buttons button {
+  font-family: "Alata", sans-serif;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  margin-right: 30px;
+}
+body header .container .buttons button:nth-child(1) {
+  background: linear-gradient(to right, #7B1FA2 50%, transparent 50%);
+  background-size: 210% 100%;
+  background-position: right bottom;
+  transition: background-position 0.4s ease-out;
+}
+body header .container .buttons button:nth-child(1):hover {
+  background-position: left bottom;
+  color: white;
+}
+body header .container .buttons button:nth-child(2) {
+  background: linear-gradient(to left, #7B1FA2 50%, transparent 50%);
+  background-size: 210% 100%;
+  background-position: left bottom;
+  transition: background-position 0.4s ease-out;
+}
+body header .container .buttons button:nth-child(2):hover {
+  background-position: right bottom;
+  color: white;
+}
+body header .container .buttons button:nth-child(3) {
+  background: linear-gradient(to bottom, #7B1FA2 50%, transparent 50%);
+  background-size: 100% 210%;
+  background-position: right bottom;
+  transition: background-position 0.4s ease-out;
+}
+body header .container .buttons button:nth-child(3):hover {
+  background-position: right top;
+  color: white;
+}
+body header .container .buttons button:nth-child(4) {
+  background: linear-gradient(to top, #7B1FA2 50%, transparent 50%);
+  background-size: 100% 210%;
+  background-position: right top;
+  transition: background-position 0.4s ease-out;
+}
+body header .container .buttons button:nth-child(4):hover {
+  background-position: right bottom;
+  color: white;
+}
+body header .container .buttons button:active {
+  transform: scale(0.95);
+}
+body footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  background-color: #7B1FA2;
+}
+body footer .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.7);
+}
+body footer .container p {
+  width: 100%;
+}
+body footer .container p span {
+  text-align: right;
+}
+body footer .container p span a {
+  color: rgba(255, 255, 255, 0.7);
+}
+body footer .container p span a:hover {
+  color: white;
 }

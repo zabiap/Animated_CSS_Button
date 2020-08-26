@@ -11,8 +11,11 @@ body header {
 body header .container {
   padding-top: 150px;
 }
-body header .container h2 {
-  color: rgba(0, 0, 0, 0.7);
+body header .container h1 {
+  color: #000;
+}
+body header .container h1 span {
+  color: #7B1FA2 !important;
 }
 body header .container .buttons {
   display: flex;
@@ -89,12 +92,15 @@ body footer .container {
 body footer .container p {
   width: 100%;
 }
-body footer .container p span {
+body footer .container p:nth-child(1) span {
+  color: white;
+}
+body footer .container p:nth-child(2) {
   text-align: right;
 }
-body footer .container p span a {
+body footer .container p:nth-child(2) span a {
   color: rgba(255, 255, 255, 0.7);
 }
-body footer .container p span a:hover {
+body footer .container p:nth-child(2) span a:hover {
   color: white;
 }
